@@ -1,0 +1,106 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes slide-down {
+  from{transform: translateY(-100%); box-shadow: 0px 0px 25px slategray;}
+  to{transform: translateY(0%); box-shadow: 0px 0px 0px black;}
+}
+
+@keyframes select {
+  from{box-shadow: 0px 0px 0px white; }
+  to{box-shadow: 0px 0px 25px yellow;}
+}
+header {
+  background-color: #c2c2c2;
+  border-radius: 15px;
+  border-color: black;
+  border-width: 2px;
+  border-style: groove;
+  font-family:Arial, Helvetica, sans-serif;
+  animation-name: slide-down;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  transform: translateY(-100%);
+}
+
+#header-title {
+  font-size: 2.34rem;
+}
+
+body {
+  background-color: #e2dada;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+#choice-container {
+  display: flex;
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-content: center;
+  border-radius: 15px;
+  border-width: 2px;
+  border-color: black;
+  border-style: groove;
+}
+
+.option-button {
+  margin: 5%;
+  padding: 10%;
+  border-radius: 15px;
+  border-style: dashed;
+  font-size: 75px;
+  background-color: whitesmoke;
+  transition: scale 1s;
+}
+
+.option-button:hover {
+  animation-name: select;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-delay: .5s;
+  scale: 105%;
+}
+
+.option-caption {
+  font-size: 15px;
+}
+
+.choice-label {
+  font-size: 45px;
+  justify-content: center;
+}
+
+@keyframes const-size {
+  25%{font-size: 45px};
+  50%{font-size: 50px}
+  75%{font-size: 45px}
+  100%{font-size: 50px}
+}
+
+#game-status {
+  font-size: 50px;
+  animation-name: const-size;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.score {
+  text-align: left;
+}
+
+#score-plr {
+  color: blue;
+}
+
+#score-rbt {
+  color: red;
+}
