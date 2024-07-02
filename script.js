@@ -34,7 +34,7 @@ function plr_select(plrchoice) {
     plrScore++;
     document.getElementById("score-plr").textContent = `Player score: ${plrScore}`;
   }
-  else{
+  else if(result.textContent === "COMPUTER WINS"){
     rbtScore++;
     document.getElementById("score-rbt").textContent = `Computer score: ${rbtScore}`;
   }
