@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>RockPaperScissors.game</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<header>
+  <h1 id="header-title">Rock, Paper, Scissors</h1>
+  <p id="header-credits">online game by creaturethingg</p>
+</header>
+
+<body>
+  <h2 class="score" id="score-plr">Player score: 0</h2> <h2 class="score" id="score-rbt">Computer score: 0</h2>
+  <h2 id="prevmain-title">Select an option below</h2>
+  <main>
+    <div id="choice-container">
+      <button class="option-button" onclick="plr_select('rock')">
+        <h3 class="option-caption">ROCK</h3>👊
+      </button>
+      <button class="option-button" onclick="plr_select('paper')"">
+        <h3 class=" option-caption">PAPER</h3>✋
+      </button>
+      <button class="option-button" onclick="plr_select('scissors')"">
+        <h3 class=" option-caption">SCISSORS</h3>✌
+      </button>
+    </div>
+    <label id="choice-plr" class="choice-label"></label> <br>
+    <label id="choice-rbt" class="choice-label"></label> <br>
+    <label id="game-status"></label>
+  </main>
+</body>
+<script src="script.js"></script>
+<footer>
+  <p>&copy 2035 creaturethingg All Rights Reserved (not really)</p>
+</footer>
+
+</html>
