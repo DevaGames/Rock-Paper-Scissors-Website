@@ -21,10 +21,13 @@ function plr_select(plrchoice) {
     switch (plrchoice) {
       case "rock":
         result.textContent = (rbtChoice === "scissors") ? "YOU WIN" : "COMPUTER WINS";
+        break;
       case "paper":
         result.textContent = (rbtChoice === "rock") ? "YOU WIN" : "COMPUTER WINS";
+        break;
       case "scissors":
          result.textContent = (rbtChoice === "paper") ? "YOU WIN" : "COMPUTER WINS"
+        break;
     }
 
   }
